@@ -1,0 +1,32 @@
+---
+Name: memcached
+Cartridge-Short-Name: Memcached
+Architecture: noarch
+Display-Name: Memcached 1.4
+Description: High Performance, Distributed Memory Object Cache
+Version: '1.4'
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: vojtechvitek
+License: BSD
+Categories:
+- service
+- embedded
+Website: http://memcached.org/
+Cart-Data:
+- Key: connection_url
+  Type: cart_data
+  Description: Memcached connection string
+Suggests:
+- php-5.3
+Provides:
+- memcached-1.4
+- memcached
+- memcached version() = 1.4
+- memcached version() = 1
+Scaling:
+  Min: 1
+  Max: 1
+Endpoints:
+- Private-IP-Name: IP
+  Private-Port-Name: PORT
+  Private-Port: 11221
